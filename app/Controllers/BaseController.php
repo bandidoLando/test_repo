@@ -12,4 +12,9 @@ use Interop\Container\ContainerInterface;
 
 			$this->c = $c;
 		}
+
+		public function nothing() {
+
+			//
+		}
 	}
