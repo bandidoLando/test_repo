@@ -5,8 +5,9 @@ use App\Controllers\TopicController;
 use App\Controllers\UserController;
 use App\Controllers\RedirectController;
 
-
-	$app->get('/', function($request, $response) {
+	
+	//this route pulls data from db
+	$app->get('/pdo', function($request, $response) {
 
 		$users = $this->db->query("SELECT * FROM members")->fetchAll(PDO::FETCH_OBJ);
 	
