@@ -1,9 +1,17 @@
 {% extends 'layouts/app.twig' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Form{% endblock %}
 
 {% block content %}
 	
-	<h2>Home</h2>
+	<h2>Little Form</h2>
+
+	<form action="{{ path_for('contact') }}" method="post">
+		<label>name</label>
+		<input type="text" name="name"><br>
+		<label>email</label>
+		<input type="email" name="email">
+		<button type="submit">Contact</button>
+	</form>
 
 {% endblock %}	
