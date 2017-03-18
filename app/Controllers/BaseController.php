@@ -8,8 +8,14 @@ use Interop\Container\ContainerInterface;
 	
 		protected $c;
 
+		// Makes container available in every controller with valid namespace
 		public function __construct(ContainerInterface $c) {
 
 			$this->c = $c;
+		}
+
+		public function helper() {
+
+			//
 		}
 	}
