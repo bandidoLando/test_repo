@@ -8,3 +8,8 @@ use App\Controllers\BaseController;
 
 		return $this->view->render($response, 'home.twig');
 	});
+
+	$app->get('/index', function($request, $response) {
+
+		return 'just index';
+	});
