@@ -7,10 +7,10 @@ class ExampleController extends BaseController {
 
 	public function redirect($request, $response) {
 
-		return $response->withRedirect($this->c->router->pathFor('landing'));
+		return $response->withRedirect($this->c->router->pathFor('show'));
 	}
 
-	public function landing($request, $response) {
+	public function show($request, $response, $args) {
 
 		return 'to here';
 	}

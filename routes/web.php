@@ -10,4 +10,4 @@ use App\Controllers\ExampleController;
 	});
 
 	$app->get('/redirect', ExampleController::class . ':redirect');
-	$app->get('/landing', ExampleController::class . ':landing')->setName('landing');
+	$app->get('/show', ExampleController::class . ':show')->setName('show');
